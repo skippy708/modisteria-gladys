@@ -477,6 +477,40 @@ a{ color:inherit; }
   font-family:var(--tec); font-size:.72rem; line-height:1.55; color:var(--jabon);
 }
 
+/* lista de precios dentro de una ficha de la galería */
+.precio{
+  margin:.55rem 0 0; padding:0; list-style:none;
+}
+.precio li{
+  display:flex; justify-content:space-between; gap:.9rem;
+  padding:.28rem 0;
+  border-bottom:1px dotted rgba(107,91,80,.35);
+}
+.precio li:last-child{ border-bottom:0; }
+.precio__talla{ color:var(--jabon); }
+.precio__monto{
+  color:var(--cobre); font-weight:500; white-space:nowrap;
+}
+.precio__nota{
+  margin:.5rem 0 0; font-size:.68rem; line-height:1.5;
+  color:var(--jabon); opacity:.85;
+}
+.precio__nota a{
+  color:var(--cobre); text-decoration:none;
+  border-bottom:1px solid rgba(150,81,63,.45);
+}
+.precio__nota a:hover{ border-bottom-color:var(--cobre); }
+
+/* aviso al pie de la galería, como una nota prendida con alfiler */
+.gal__aviso{
+  max-width:52ch; margin:2.6rem auto 0; padding:.95rem 1.2rem;
+  border:1px dashed rgba(192,129,112,.6); border-radius:2px;
+  background:var(--papel-alto);
+  font-family:var(--tec); font-size:.74rem; line-height:1.6;
+  color:var(--jabon); text-align:center;
+}
+.gal__aviso strong{ color:var(--cobre); font-weight:500; }
+
 /* ══════════════════ CLASES EN LÍNEA ══════════════════ */
 .clases{
   display:grid; gap:clamp(2.5rem, 5vw, 4rem);
